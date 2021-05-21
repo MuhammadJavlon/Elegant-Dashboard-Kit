@@ -1,49 +1,71 @@
 {
-  "name": "soft-ui-dashboard",
-  "version": "1.0.2",
-  "description": "Freebie Dashboard for Bootstrap 5",
-  "main": "pages/dashboard.html",
-  "directories": {
-    "example": "root"
-  },
-  "scripts": {
-    "open-app": "gulp open-app",
-    "start": "npm run open-app",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "gulp-watch"
-  },
+  "name": "elegant-dashboard-kit",
+  "version": "1.0.0",
+  "description": "Elegant Dashboard Kit - Bootstrap 5 Dashboard Template",
+  "keywords": [
+    "bootstrap",
+    "bootstrap 5",
+    "admin",
+    "admin template",
+    "dashboard"
+  ],
+  "homepage": "https://elegant-dashboard.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/soft-ui-dashboard.git"
+    "url": ""
   },
-  "keywords": [
-    "soft ui dashboard",
-    "bootstrap 5",
-    "dashboard",
-    "creative tim",
-    "html dashboard",
-    "html css dashboard",
-    "web dashboard",
-    "freebie",
-    "free bootstrap dashboard",
-    "css3 dashboard",
-    "bootstrap dashboard",
-    "frontend",
-    "responsive bootstrap dashboard"
-  ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/soft-ui-dashboard/issues"
+  "author": "Voyager Themes",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
+    "watch": "webpack -p --config webpack.config.js --watch",
+    "start": "webpack-dev-server --config webpack.config.js",
+    "prepublishOnly": "cross-env NODE_ENV=production webpack -p --config webpack.config.js"
+  },
+  "browserslist": [
+    "> 0.25%",
+    "not op_mini all",
+    "not dead",
+    "not ie >= 0"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "7.12.1",
+    "@popperjs/core": "2.9.2",
+    "bootstrap": "5.0.1",
+    "chart.js": "2.9.4",
+    "dark-mode-switch": "^1.0.0",
+    "feather-icons": "4.28.0",
+    "flatpickr": "4.6.9",
+    "jsvectormap": "1.3.1",
+    "simplebar": "5.3.3"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean": "^0.4.0",
-    "gulp-install": "^1.1.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-open": "^3.0.1"
-  },
-  "homepage": "http://creative-tim.com/product/soft-ui-dashboard"
+    "@babel/core": "7.14.3",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/preset-env": "7.14.2",
+    "@babel/register": "7.13.16",
+    "autoprefixer": "9.8.6",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
+    "copy-webpack-plugin": "6.4.1",
+    "cross-env": "7.0.3",
+    "css-loader": "4.3.0",
+    "eslint": "7.26.0",
+    "file-loader": "6.2.0",
+    "filemanager-webpack-plugin": "2.0.5",
+    "hard-source-webpack-plugin": "0.13.1",
+    "mini-css-extract-plugin": "0.12.0",
+    "node-sass": "4.14.1",
+    "optimize-css-assets-webpack-plugin": "5.0.6",
+    "postcss-loader": "4.3.0",
+    "sass-loader": "10.2.0",
+    "terser-webpack-plugin": "4.2.3",
+    "url-loader": "4.1.1",
+    "webpack": "4.46.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.2"
+  }
 }
