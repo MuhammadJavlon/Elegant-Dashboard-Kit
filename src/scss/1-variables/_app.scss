@@ -55,7 +55,7 @@ $enable-negative-margins: true !default;
 $transition-base: all .35s ease-in-out !default;
 
 // Theme colors
-$blue:    #ff2a83 !default;
+$blue:    #382aff !default;
 $indigo:  #0a0a0a !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -210,7 +210,7 @@ $card-inner-border-radius: $card-border-radius !default;
 $card-border-width: 0 !default;
 $card-border-color: transparent !default;
 $card-cap-bg: $white !default;
-$card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
+$card-shadow: 0px 15px 50px rgba($dark, 0.01) !default;
 $card-title-font-size: $font-size-lg !default;
 $card-title-font-weight: $font-weight-bold !default;
 $card-title-color: lighten($gray-600, 15%) !default;
@@ -240,7 +240,7 @@ $sidebar-brand-font-size: 1.15rem !default;
 $sidebar-brand-color: $gray-100 !default;
 
 // Sidebar header
-$sidebar-header-padding: 1.5rem 1.5rem 0.375rem !default;
+$sidebar-header-padding: 1.5rem 1.5rem 0.375rem 2rem !default;
 $sidebar-header-font-size: $font-size-sm !default;
 $sidebar-header-color: $gray-400 !default;
 
@@ -307,8 +307,14 @@ $bs-datetimepicker-active-bg: $primary !default;
 $simplebar-scrollbar-bg: $white !default;
 
 // Stats
-$stat-bg: lighten($primary, 35%) !default;
-$stat-icon-color: $primary !default;
+$stat-bg-info: lighten($info, 50%) !default;
+$stat-bg-danger: lighten($danger, 50%) !default;
+$stat-bg-warning: lighten($warning, 35%) !default;
+$stat-bg-success: lighten($success, 50%) !default;
+$stat-icon-info: $info !default;
+$stat-icon-danger: $danger !default;
+$stat-icon-warning: $warning !default;
+$stat-icon-success: $success !default;
 $stat-padding: $spacer * 0.75 !default;
 
 // DropDown

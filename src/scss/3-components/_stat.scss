@@ -1,16 +1,38 @@
 .stat {
-  background: $stat-bg;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   align-items: center;
   justify-content: center;
   display: flex;
 
   svg {
-    width: 18px;
-    height: 18px;
-    color: $stat-icon-color !important;
-    stroke-width: 1.5;
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+  }
+}
+
+.stat-info {
+  background: $stat-bg-info;
+
+  svg {
+    color: $stat-icon-info !important;
+  }
+}
+
+.stat-success {
+  background: $stat-bg-success;
+
+  svg {
+    color: $stat-icon-success !important;
+  }
+}
+
+.stat-warning {
+  background: $stat-bg-warning;
+
+  svg {
+    color: $stat-icon-warning !important;
   }
 }
